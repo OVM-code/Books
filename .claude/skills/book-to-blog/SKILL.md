@@ -17,7 +17,7 @@ Find the single strongest self-contained observation, reframe, or story-beat in 
 
 ## Step 2 — register shift
 
-Switch from book-voice chained reasoning to tone-of-voice short-form: compress, one idea, lead with the observation. Substack posts run longer than a LinkedIn post (roughly 300-900 words is normal, not 3-6 lines) — carry over tone-of-voice.md's core attributes and the pre-publishing filter, not its strict LinkedIn line-count structure.
+Shift into the Substack register defined in tone-of-voice.md ("Substack Register" section): one core idea, lead with the observation, 300-900 words, chained reasoning only where it earns its place. Honor the contrast rule from that section: the post reads like a fast, complete thought; the chapter is the same mind given room — if the post reads like a chapter, the funnel has nothing to offer at the next level.
 
 ## Step 3 — the pull toward the book
 

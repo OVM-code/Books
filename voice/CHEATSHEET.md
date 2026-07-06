@@ -13,8 +13,11 @@ Core attributes are shared and never change: warm but not soft, curious not perf
 
 ## Long-form vs short-form mechanics
 
-- **Short-form:** compress. 3–6 lines, one idea, short sentences.
+- **Short-form (LinkedIn):** compress. 3–6 lines, one idea, short sentences.
+- **Substack:** middle register (tone-of-voice.md "Substack Register"): short-form attributes, 300–900 words, chained reasoning allowed where it earns its place. Faster than a chapter, roomier than a post.
 - **Long-form:** chain the reasoning inside the sentence with *because / but / and / as*. Do NOT compress into staccato fragments — that's a rejected register in books.
+
+Em-dashes are banned in ALL formats, including short-form (global since July 2026) — except this cheatsheet's own list formatting; never in published prose.
 
 ## The five long-form patterns (book-voice.md §3)
 
