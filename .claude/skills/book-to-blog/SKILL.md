@@ -30,3 +30,5 @@ Run it against the Pre-Publishing Filter (tone-of-voice.md): true for her, writt
 ## Output
 
 Save to `projects/<slug>/blog-posts/`. Note in the file, and in `project.md`'s chapter log, which chapter it was derived from.
+
+**Then, automatically:** invoke the `linkedin` skill on the finished post. Every blog post ships with its LinkedIn posts — this is a pipeline requirement (see `marketing/linkedin/STRATEGY.md`), not an optional extra. Skip only if the user explicitly says not to.

@@ -29,8 +29,8 @@ Each must contain the seeker's own phrasing somewhere AND read as her voice. Tes
 - 2-3 Substack Notes angles: short, self-contained excerpts or restatements from the piece that stand alone as Notes and link back. Pull real sentences from the piece where possible (minimal-touch principle) rather than writing new marketing copy.
 - Tags/topics to file it under, using the researched vocabulary.
 
-**3. LinkedIn post.**
-Write it per tone-of-voice.md's LinkedIn guide: 3-6 lines before a break, observation-first, one idea, ends on reflection or open thought — never "read my post" as a CTA. The link goes in the post or first comment (note both options; her call). Use one of the three templates (Observation / Honest Admission / Reframe), whichever the piece's core beat actually is.
+**3. LinkedIn posts.**
+Don't write these here — the `linkedin` skill owns LinkedIn generation. Check `marketing/linkedin/posts/<piece-slug>.md`: if the piece's posts already exist (they should, the pipeline generates them when a blog post is finished), reference them and note in the campaign file which one is the funnel post and where it sits in `marketing/linkedin/queue.md`. If they don't exist yet, invoke the `linkedin` skill now.
 
 **4. Keyword note.**
 The 5-10 exact phrasings seekers use, for reuse: future titles, Substack tags, and so the same research isn't redone next time. Cross-reference the radar report if one fed this.

@@ -7,7 +7,7 @@ Olivia Vanmalleghem's writing system: books and Substack posts, in her own voice
 - `voice/` — voice authority. `CHEATSHEET.md` (read this by default), `book-voice.md` (long-form authority), `tone-of-voice.md` (short-form/LinkedIn authority).
 - `projects/<slug>/` — one per book or post series: `project.md` (brief: mode, audience, premise, chapter log), `manuscript/`, `research/`, `blog-posts/`.
 - `projects/_template/` — scaffold copied by `/new-project`.
-- `marketing/` — demand research and distribution. `radar/` (dated topic-opportunity reports from `/topic-radar`), `campaigns/` (per-piece distribution plans from `/promote`).
+- `marketing/` — demand research and distribution. `radar/` (dated topic-opportunity reports from `/topic-radar`), `campaigns/` (per-piece distribution plans from `/promote`), `linkedin/` (STRATEGY.md, queue.md, posts/ — generated LinkedIn posts).
 
 ## Skills (each is the full instructions for its job — this file stays thin on purpose)
 
@@ -18,7 +18,8 @@ Olivia Vanmalleghem's writing system: books and Substack posts, in her own voice
 - `/book-to-blog` — derive a Substack post from a manuscript chapter, to pull readers toward the book.
 - `/blog-to-book` — grow a Substack post into a book chapter.
 - `/topic-radar` — research online demand (questions, searches, content gaps) into a ranked, authenticity-filtered topic report.
-- `/promote` — distribution plan for a finished piece: titles, Substack packaging, LinkedIn post, seeker-phrasing keywords.
+- `/promote` — distribution plan for a finished piece: titles, Substack packaging, seeker-phrasing keywords.
+- `/linkedin` — 3 LinkedIn posts (one per template, one funnel post) from any piece, into the queue. Runs automatically whenever a skill finishes a blog post.
 
 ## Token-cost principles
 

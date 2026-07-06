@@ -37,4 +37,6 @@ Compare against book-voice.md §9.1. Check the forbidden list, especially perfor
 
 ## Output
 
-Save to `projects/<slug>/manuscript/`. Update the chapter log in `project.md`.
+Save chapters to `projects/<slug>/manuscript/`; standalone Substack pieces to `projects/<slug>/blog-posts/`. Update the chapter log in `project.md`.
+
+**If the piece is a blog post**, automatically invoke the `linkedin` skill on it — every blog post ships with its LinkedIn posts (pipeline requirement, `marketing/linkedin/STRATEGY.md`). Skip only if the user says not to.

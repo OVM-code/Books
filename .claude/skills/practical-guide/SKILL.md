@@ -41,4 +41,6 @@ Compare the draft against book-voice.md §9.3. Check against the forbidden list 
 
 ## Output
 
-Save to `projects/<slug>/manuscript/`. Append or update the chapter-end reference list. Update the chapter log in `project.md`.
+Save chapters to `projects/<slug>/manuscript/`; standalone Substack pieces to `projects/<slug>/blog-posts/`. Append or update the chapter-end reference list. Update the chapter log in `project.md`.
+
+**If the piece is a blog post**, automatically invoke the `linkedin` skill on it — every blog post ships with its LinkedIn posts (pipeline requirement, `marketing/linkedin/STRATEGY.md`). Skip only if the user says not to.

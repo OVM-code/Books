@@ -31,6 +31,10 @@ projects/
 marketing/
   radar/            dated topic-opportunity reports from /topic-radar
   campaigns/        per-piece distribution plans from /promote
+  linkedin/
+    STRATEGY.md     what LinkedIn is for, cadence, content mix, link policy
+    queue.md        posting queue: drafted → approved → posted / dropped
+    posts/          generated LinkedIn posts, one file per source piece
 
 .claude/skills/     one skill per mode + pipeline direction (see below)
 CLAUDE.md           thin router Claude reads at session start
@@ -47,7 +51,8 @@ Every book or post series gets its own folder under `projects/`. A project can s
 - **`/book-to-blog`** — turn a manuscript chapter into a Substack post. Picks the one beat that stands alone, shifts register to short-form, and ends with an honest nod toward the book rather than a pitch.
 - **`/blog-to-book`** — grow a Substack post into a book chapter. Uncompresses short-form beats into the chained, reasoning-bearing sentences long-form uses, in whichever mode the project is set to.
 - **`/topic-radar`** — research what people are actually asking and searching for online (forum questions, search phrasings, gaps in existing content, unanswered comment sections), then filter that demand through what Olivia can authentically write from lived or observed ground. Produces a ranked opportunity report in `marketing/radar/`, including the exact phrasings seekers use.
-- **`/promote`** — take a finished post or chapter and build its distribution plan: title/subtitle options that carry the seeker's own words without turning into clickbait, Substack preview text and Notes angles, a LinkedIn post per the tone-of-voice templates, and a keyword note. Saves to `marketing/campaigns/`, reusing radar findings when they exist.
+- **`/promote`** — take a finished post or chapter and build its distribution plan: title/subtitle options that carry the seeker's own words without turning into clickbait, Substack preview text and Notes angles, and a keyword note. Saves to `marketing/campaigns/`, reusing radar findings and already-generated LinkedIn posts when they exist.
+- **`/linkedin`** — generate 3 LinkedIn posts from any piece: one per template family (Observation / Honest Admission / Reframe), each on a different beat so they don't repeat, exactly one carrying the link back to Substack (the funnel post). Posts land in `marketing/linkedin/posts/` and enter the queue as `drafted`. This skill also runs **automatically** as the last step whenever `/book-to-blog` or a mode skill finishes a blog post — every blog post ships with its LinkedIn posts.
 
 Each skill file is the complete instructions for that job. `CLAUDE.md` doesn't repeat them — it just points here so idle context stays cheap.
 
@@ -60,9 +65,10 @@ Each skill file is the complete instructions for that job. `CLAUDE.md` doesn't r
 1. `/topic-radar` — when planning what to write next, scan real online demand and get ranked, authenticity-filtered topic opportunities.
 2. `/new-project` — set up the folder, declare mode and audience.
 3. Draft chapters with the matching mode skill (`/practical-guide`, `/reflective-essay`, or `/story-insight`), one at a time, updating the chapter log in `project.md` as you go.
-4. When a chapter has a beat worth surfacing early, `/book-to-blog` it into `blog-posts/` and publish on Substack.
+4. When a chapter has a beat worth surfacing early, `/book-to-blog` it into `blog-posts/` — its LinkedIn posts are generated automatically in the same run and queued in `marketing/linkedin/queue.md`.
 5. When a post (yours or one that started independently) has more in it than the short form could hold, `/blog-to-book` it into a new manuscript chapter.
 6. `/promote` — when a piece is ready to publish, build its distribution plan so the people the radar found actually encounter it.
+7. Publish per `marketing/linkedin/STRATEGY.md`: 2–3 posts a week from the queue, one funnel post per source piece, flipping queue rows to `posted` as you go. Wrote a post yourself, outside the pipeline? Run `/linkedin` on it directly.
 
 ## Why it's built this way (token cost)
 
