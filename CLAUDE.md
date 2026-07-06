@@ -7,6 +7,7 @@ Olivia Vanmalleghem's writing system: books and Substack posts, in her own voice
 - `voice/` — voice authority. `CHEATSHEET.md` (read this by default), `book-voice.md` (long-form authority), `tone-of-voice.md` (short-form/LinkedIn authority).
 - `projects/<slug>/` — one per book or post series: `project.md` (brief: mode, audience, premise, chapter log), `manuscript/`, `research/`, `blog-posts/`.
 - `projects/_template/` — scaffold copied by `/new-project`.
+- `marketing/` — demand research and distribution. `radar/` (dated topic-opportunity reports from `/topic-radar`), `campaigns/` (per-piece distribution plans from `/promote`).
 
 ## Skills (each is the full instructions for its job — this file stays thin on purpose)
 
@@ -16,6 +17,8 @@ Olivia Vanmalleghem's writing system: books and Substack posts, in her own voice
 - `/story-insight` — guided elicitation of the author's real story material first, research second.
 - `/book-to-blog` — derive a Substack post from a manuscript chapter, to pull readers toward the book.
 - `/blog-to-book` — grow a Substack post into a book chapter.
+- `/topic-radar` — research online demand (questions, searches, content gaps) into a ranked, authenticity-filtered topic report.
+- `/promote` — distribution plan for a finished piece: titles, Substack packaging, LinkedIn post, seeker-phrasing keywords.
 
 ## Token-cost principles
 

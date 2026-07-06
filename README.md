@@ -28,6 +28,10 @@ projects/
     research/        synthesized research notes, sources at file end
     blog-posts/      Substack drafts derived from or feeding into the book
 
+marketing/
+  radar/            dated topic-opportunity reports from /topic-radar
+  campaigns/        per-piece distribution plans from /promote
+
 .claude/skills/     one skill per mode + pipeline direction (see below)
 CLAUDE.md           thin router Claude reads at session start
 ```
@@ -42,6 +46,8 @@ Every book or post series gets its own folder under `projects/`. A project can s
 - **`/story-insight`** — draft or continue a story + insight piece. Runs a short guided-question sequence to recover the real scene and the reframe you actually used, before any prose gets written.
 - **`/book-to-blog`** — turn a manuscript chapter into a Substack post. Picks the one beat that stands alone, shifts register to short-form, and ends with an honest nod toward the book rather than a pitch.
 - **`/blog-to-book`** — grow a Substack post into a book chapter. Uncompresses short-form beats into the chained, reasoning-bearing sentences long-form uses, in whichever mode the project is set to.
+- **`/topic-radar`** — research what people are actually asking and searching for online (forum questions, search phrasings, gaps in existing content, unanswered comment sections), then filter that demand through what Olivia can authentically write from lived or observed ground. Produces a ranked opportunity report in `marketing/radar/`, including the exact phrasings seekers use.
+- **`/promote`** — take a finished post or chapter and build its distribution plan: title/subtitle options that carry the seeker's own words without turning into clickbait, Substack preview text and Notes angles, a LinkedIn post per the tone-of-voice templates, and a keyword note. Saves to `marketing/campaigns/`, reusing radar findings when they exist.
 
 Each skill file is the complete instructions for that job. `CLAUDE.md` doesn't repeat them — it just points here so idle context stays cheap.
 
@@ -51,10 +57,12 @@ Each skill file is the complete instructions for that job. `CLAUDE.md` doesn't r
 
 ## A typical flow
 
-1. `/new-project` — set up the folder, declare mode and audience.
-2. Draft chapters with the matching mode skill (`/practical-guide`, `/reflective-essay`, or `/story-insight`), one at a time, updating the chapter log in `project.md` as you go.
-3. When a chapter has a beat worth surfacing early, `/book-to-blog` it into `blog-posts/` and publish on Substack.
-4. When a post (yours or one that started independently) has more in it than the short form could hold, `/blog-to-book` it into a new manuscript chapter.
+1. `/topic-radar` — when planning what to write next, scan real online demand and get ranked, authenticity-filtered topic opportunities.
+2. `/new-project` — set up the folder, declare mode and audience.
+3. Draft chapters with the matching mode skill (`/practical-guide`, `/reflective-essay`, or `/story-insight`), one at a time, updating the chapter log in `project.md` as you go.
+4. When a chapter has a beat worth surfacing early, `/book-to-blog` it into `blog-posts/` and publish on Substack.
+5. When a post (yours or one that started independently) has more in it than the short form could hold, `/blog-to-book` it into a new manuscript chapter.
+6. `/promote` — when a piece is ready to publish, build its distribution plan so the people the radar found actually encounter it.
 
 ## Why it's built this way (token cost)
 
