@@ -21,7 +21,7 @@ Shift into the Substack register defined in tone-of-voice.md ("Substack Register
 
 ## Step 3 — the pull toward the book
 
-Tone-of-voice.md's LinkedIn structure ends on an open reflection, never a CTA. A Substack piece derived from a book is allowed one exception: a closing beat that honestly signals there's more — because there genuinely is a book behind it — without becoming a pitch. It should read like an honest continuation of the thought, not a sales tab. If it would sound at home under "buy now," it's off-voice; if it sounds like "here's where I take this further," it's fine.
+This is the exception already written into the Substack Register's ending rule (tone-of-voice.md): a closing beat that honestly signals there's more — because there genuinely is a book behind it — without becoming a pitch. It should read like an honest continuation of the thought, not a sales tab. If it would sound at home under "buy now," it's off-voice; if it sounds like "here's where I take this further," it's fine.
 
 ## Before delivering
 
@@ -29,6 +29,6 @@ Run it against the Pre-Publishing Filter (tone-of-voice.md): true for her, writt
 
 ## Output
 
-Save to `projects/<slug>/blog-posts/`. Note in the file, and in `project.md`'s chapter log, which chapter it was derived from.
+Save to `projects/<slug>/blog-posts/<piece-slug>.md`, where `<piece-slug>` is a kebab-case name for this post (this filename stem is what `linkedin` and `promote` will use to find it later — keep it stable once chosen). Note in the file, and in `project.md`'s chapter log, which chapter it was derived from.
 
 **Then, automatically:** invoke the `linkedin` skill on the finished post. Every blog post ships with its LinkedIn posts — this is a pipeline requirement (see `marketing/linkedin/STRATEGY.md`), not an optional extra. Skip only if the user explicitly says not to.

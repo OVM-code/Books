@@ -19,7 +19,17 @@ Olivia Vanmalleghem's writing system: books and Substack posts, in her own voice
 - `/blog-to-book` — grow a Substack post into a book chapter.
 - `/topic-radar` — research online demand (questions, searches, content gaps) into a ranked, authenticity-filtered topic report.
 - `/promote` — distribution plan for a finished piece: titles, Substack packaging, seeker-phrasing keywords.
-- `/linkedin` — 3 LinkedIn posts (one per template, one funnel post) from any piece, into the queue. Runs automatically whenever a skill finishes a blog post.
+- `/linkedin` — 3 LinkedIn posts (one per template, one funnel post) from any piece, or 1 native post from something told to Claude directly. Runs automatically whenever a skill finishes a blog post.
+- `/voice-check` — batch audit across several manuscript chapters or posts for drift a single piece's own self-check can't see. Periodic, not per-draft.
+
+## Persistence
+
+This runs in an ephemeral remote container — uncommitted work does not survive a reclaimed session. After producing or updating any file (a draft, a queue row, a report), say what changed and ask whether to commit and push now. Don't commit automatically without asking, but don't let a session end on unsaved work either — the ask itself is the safety net.
+
+## Pipeline invariants
+
+- Any skill that writes a new file into a project's `blog-posts/` folder must invoke the `linkedin` skill on it before finishing, unless the user says not to. This is stated in each mode skill and in `book-to-blog`; it's repeated here as a backstop in the file that's always loaded.
+- `<piece-slug>` (used by `linkedin`, `promote`, and the campaigns/posts folders) is always the source file's name without its extension — e.g. `blog-posts/ai-use-case-assessment.md` → `ai-use-case-assessment`. Every skill that reads or writes a slug-named file uses this same derivation so they resolve to the same filename.
 
 ## Token-cost principles
 

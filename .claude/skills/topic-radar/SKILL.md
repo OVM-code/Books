@@ -10,7 +10,8 @@ Find real demand, then filter it through what Olivia can authentically write. Th
 ## Before researching
 
 1. Read `voice/CHEATSHEET.md` (for the authenticity filter and audience profiles — not for drafting).
-2. Ask, in one short message, only what isn't clear from context:
+2. Check `marketing/linkedin/queue.md` for rows with `Resonated? = yes` — note which themes/topics they trace back to (via Source piece). This is real signal about what already worked, not a guess, and should raise those themes' ranking below if the current scan touches them. If the queue has no resonance data yet (too early, or the review loop hasn't run), skip this step; don't block the scan on it.
+3. Ask, in one short message, only what isn't clear from context:
    - Which audience is this scan for: young professionals/students (18-28), professional readers (AI/ERP/consulting), or both?
    - Any theme seed ("around AI and learning", "around use-case assessment") or fully open?
    - Is this feeding an existing project (check `projects/*/project.md`) or hunting for new ones?
@@ -24,7 +25,7 @@ Delegate ALL of this to parallel subagents; each returns a short synthesis with 
 3. **What's already being written.** Substack and LinkedIn writers in the adjacent space: what's saturated, what's covered only in hollow/thought-leader register (an opening for her — her differentiator is honesty and receipts where others perform), what's genuinely missing.
 4. **Comment-section gaps.** On popular posts in the niche: what do commenters ask that the post didn't answer? Comments are demand that the existing supply provably failed to meet.
 
-If the scan is for both audiences, run the sweep per audience — their questions barely overlap.
+If the scan is for both audiences, run the sweep per audience — their questions barely overlap. This roughly doubles the research (8 subagents instead of 4); say so before running rather than letting the cost be a surprise.
 
 ## The authenticity filter (what makes this hers)
 
@@ -57,7 +58,7 @@ For each (best first):
 ## Sources
 ```
 
-Rank by demand strength × her edge, not demand alone. Include the dropped list — knowing what was rejected and why prevents re-researching it next scan.
+Rank by demand strength × her edge, and nudge upward anything that overlaps a theme already marked `Resonated? = yes` in the queue (note this explicitly next to the opportunity when it applies, so the ranking reasoning is visible). Include the dropped list — knowing what was rejected and why prevents re-researching it next scan.
 
 ## After the report
 

@@ -11,6 +11,8 @@ AI role: interviewer first, writer second. The story must come from the author's
 
 Read `voice/CHEATSHEET.md`. Read the project's `project.md`. Full `voice/book-voice.md` reference points for this mode: §9.2 (approved sample), §3.1 (reflection not drama) and §7 (dramatization creep) — pull these in when shaping or checking, not before.
 
+Determine whether this piece is a manuscript chapter or a standalone Substack post — infer it from what the user asked for; if genuinely unclear, ask. This decides the output folder and the register (chapter = full chains; standalone post = `tone-of-voice.md`'s Substack register).
+
 ## Step 1 — guided elicitation (do this before writing any prose)
 
 Ask a sequence of questions to surface, in order:
@@ -37,6 +39,10 @@ If research would sharpen the insight (a name for a pattern, a statistic that co
 ## Before delivering
 
 Compare against book-voice.md §9.2. Confirm every scene detail traces back to something the author actually told you — if you're unsure whether a detail was elicited or invented, ask her rather than deciding.
+
+## Calibration capture
+
+If the author corrects the delivered draft, check whether the correction is a one-off fix or reveals a new voice pattern. If it looks like a pattern, ask whether to fold it into `book-voice.md` §3/§8 per that file's own growth rule (§10). Only edit the voice file if she agrees.
 
 ## Output
 

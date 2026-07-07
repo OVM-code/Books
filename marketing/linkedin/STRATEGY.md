@@ -50,7 +50,7 @@ Every generated or native post enters `queue.md` with a status:
 
 ## Review loop
 
-Once a month or so, look back over `posted` rows: which posts drew genuine engagement (real comments, not vanity likes), which funnel posts actually moved readers to Substack. Feed what resonates into `/topic-radar` scans and back into this file. Cadence and mix here are starting values, not fixed rules — update them as evidence accumulates.
+Once a month or so, look back over `posted` rows: which posts drew genuine engagement (real comments, not vanity likes), which funnel posts actually moved readers to Substack. Fill in each row's `Resonated?` column in `queue.md` — that's what `/topic-radar` reads to weight future scans, so this step is what makes the feedback loop real rather than aspirational. Cadence and mix here are starting values, not fixed rules — update them as evidence accumulates.
 
 ## What never changes
 

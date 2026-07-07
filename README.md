@@ -23,10 +23,11 @@ voice/
 projects/
   _template/        blank scaffold, copied by /new-project
   <slug>/
-    project.md      brief: mode, audience, premise, chapter/post log
-    manuscript/      chapter drafts
-    research/        synthesized research notes, sources at file end
-    blog-posts/      Substack drafts derived from or feeding into the book
+    project.md          brief: mode, audience, premise, chapter/post log
+    manuscript/          chapter drafts
+    research/            synthesized research notes (one file per topic, sources at the end), written by /practical-guide and /blog-to-book
+    blog-posts/          Substack drafts derived from or feeding into the book
+    VOICE-CHECK.md       latest batch drift audit from /voice-check (overwritten each run, not per-project until first run)
 
 marketing/
   radar/            dated topic-opportunity reports from /topic-radar
@@ -52,7 +53,8 @@ Every book or post series gets its own folder under `projects/`. A project can s
 - **`/blog-to-book`** — grow a Substack post into a book chapter. Uncompresses short-form beats into the chained, reasoning-bearing sentences long-form uses, in whichever mode the project is set to.
 - **`/topic-radar`** — research what people are actually asking and searching for online (forum questions, search phrasings, gaps in existing content, unanswered comment sections), then filter that demand through what Olivia can authentically write from lived or observed ground. Produces a ranked opportunity report in `marketing/radar/`, including the exact phrasings seekers use.
 - **`/promote`** — take a finished post or chapter and build its distribution plan: title/subtitle options that carry the seeker's own words without turning into clickbait, Substack preview text and Notes angles, and a keyword note. Saves to `marketing/campaigns/`, reusing radar findings and already-generated LinkedIn posts when they exist.
-- **`/linkedin`** — generate 3 LinkedIn posts from any piece: one per template family (Observation / Honest Admission / Reframe), each on a different beat so they don't repeat, exactly one carrying the link back to Substack (the funnel post). Posts land in `marketing/linkedin/posts/` and enter the queue as `drafted`. This skill also runs **automatically** as the last step whenever `/book-to-blog` or a mode skill finishes a blog post — every blog post ships with its LinkedIn posts.
+- **`/linkedin`** — two modes. Derived: 3 posts from an existing piece, one per template family (Observation / Honest Admission / Reframe), each on a different beat, exactly one carrying the link back to Substack (the funnel post). Native: 1 post built directly from something you tell it in the moment, no written source needed — this is how the strategy's native third of the content mix actually gets made. Posts land in `marketing/linkedin/posts/` and enter the queue as `drafted`. Derived mode also runs **automatically** as the last step whenever `/book-to-blog` or a mode skill finishes a blog post.
+- **`/voice-check`** — a periodic batch audit, not a per-draft check. Each mode skill already checks the piece it just wrote against the calibration samples; this skill instead scans several chapters or posts together for what only shows up across pieces written in different sessions — rhythmic monotony, a forbidden phrase creeping back in, an authority-register slip, audience bleed between chapters. Writes findings to `projects/<slug>/VOICE-CHECK.md` and never edits a chapter itself — you decide what to fix and re-invoke the mode skill that owns it.
 
 Each skill file is the complete instructions for that job. `CLAUDE.md` doesn't repeat them — it just points here so idle context stays cheap.
 
@@ -68,7 +70,9 @@ Each skill file is the complete instructions for that job. `CLAUDE.md` doesn't r
 4. When a chapter has a beat worth surfacing early, `/book-to-blog` it into `blog-posts/` — its LinkedIn posts are generated automatically in the same run and queued in `marketing/linkedin/queue.md`.
 5. When a post (yours or one that started independently) has more in it than the short form could hold, `/blog-to-book` it into a new manuscript chapter.
 6. `/promote` — when a piece is ready to publish, build its distribution plan so the people the radar found actually encounter it.
-7. Publish per `marketing/linkedin/STRATEGY.md`: 2–3 posts a week from the queue, one funnel post per source piece, flipping queue rows to `posted` as you go. Wrote a post yourself, outside the pipeline? Run `/linkedin` on it directly.
+7. Publish per `marketing/linkedin/STRATEGY.md`: 2–3 posts a week from the queue (roughly two-thirds derived, one-third native via `/linkedin`'s native mode), one funnel post per source piece, flipping queue rows to `posted` as you go.
+8. Once a month, fill in `Resonated?` on posted queue rows — that's what feeds back into `/topic-radar`'s ranking next time.
+9. Every several chapters, or before a milestone, run `/voice-check` across the manuscript to catch drift no single chapter's own self-check would see.
 
 ## Why it's built this way (token cost)
 

@@ -11,6 +11,8 @@ AI role: sparring partner and researcher, never the primary author. This is the 
 
 Read `voice/CHEATSHEET.md`. Read the project's `project.md` for audience and premise. Full `voice/book-voice.md` sections only as needed (§9.0 and §9.1 are the reference points for this mode — pull them in when shaping or checking, not before).
 
+Determine whether this piece is a manuscript chapter or a standalone Substack post — infer it from what the user asked for; if genuinely unclear, ask. This decides the output folder and the register (chapter = full chains; standalone post = `tone-of-voice.md`'s Substack register).
+
 ## Step 1 — get her raw material first
 
 If the author hasn't already supplied raw, unfiltered thoughts on the topic, ask for them before writing anything. Prompt for something close to book-voice.md §9.0: whatever she actually thinks, typed fast, unedited, no concern for structure or polish. Good prompts:
@@ -34,6 +36,10 @@ Edit with a light hand (book-voice.md §10): her sentences are the spine. Restru
 ## Before delivering
 
 Compare against book-voice.md §9.1. Check the forbidden list, especially performed enthusiasm and moralising — reflective essay is where disclosure runs deepest (book-voice.md §5), and that's a reason to stay plain, not a license to dramatize.
+
+## Calibration capture
+
+If the author corrects the delivered draft, check whether the correction is a one-off fix or reveals a new voice pattern. If it looks like a pattern, ask whether to fold it into `book-voice.md` §3/§8 per that file's own growth rule (§10). Only edit the voice file if she agrees.
 
 ## Output
 

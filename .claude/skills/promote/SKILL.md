@@ -9,8 +9,8 @@ Take something already written and package it so it reaches the people who are s
 
 ## Before planning
 
-1. Read `voice/CHEATSHEET.md` and the finished piece (from `projects/<slug>/blog-posts/` or `manuscript/`).
-2. Check `marketing/radar/` for a recent report covering this topic — if one exists, reuse its "search phrasing to remember" instead of re-researching.
+1. Read `voice/CHEATSHEET.md` and the finished piece (from `projects/<slug>/blog-posts/` or `manuscript/`). `<piece-slug>` is that file's name without its extension — same derivation `linkedin` uses, so both skills resolve to the same filenames.
+2. Grep `marketing/radar/*.md` for the piece's topic/keywords — if a report covers it, reuse its "search phrasing to remember" instead of re-researching.
 3. Check `projects/<slug>/project.md` for the audience — it decides vocabulary everywhere below.
 
 ## Research — how seekers phrase it
@@ -44,4 +44,4 @@ Before delivering, run the packaging itself through tone-of-voice.md's pre-publi
 
 ## After
 
-Update `project.md`'s chapter log (add a "promoted" note or column entry for the piece). Summarize the recommended title and the LinkedIn post inline so she can act without opening the file.
+Update the piece's row in `project.md`'s chapter log: set `Promoted?` to today's date plus the channels run (e.g. `2026-07-10, LinkedIn+Substack`). Summarize the recommended title and the funnel LinkedIn post inline so she can act without opening the file.

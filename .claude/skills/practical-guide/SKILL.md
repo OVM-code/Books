@@ -11,14 +11,16 @@ AI role: primary drafter, on a short leash. The author's lived expertise sets th
 
 1. Read `voice/CHEATSHEET.md`. Do not read the full `voice/book-voice.md` or `voice/tone-of-voice.md` unless a specific ambiguity needs a full section or a calibration sample (§9.3 is the approved practical-guide sample — pull it in only when checking a finished draft).
 2. Read the relevant `projects/<slug>/project.md` for audience and premise. If none exists yet, point the user to `/new-project` first.
-3. Identify, for the section being drafted, what's **lived** (she's done it — write with full confidence), what's **observed** (she's watched it in others — frame as noticing), and what needs **research** (frame as synthesis, never borrowed authority). This split is the single most important judgment call in this mode — get it wrong and the authority register breaks (book-voice.md §4).
+3. Determine whether this piece is a manuscript chapter or a standalone Substack post — infer it from what the user asked for; if it's genuinely unclear, ask. This decides the output folder (Section below) and matters for register (chapter = full book-voice chains; standalone post = the Substack register in `tone-of-voice.md`).
+4. Identify, for the section being drafted, what's **lived** (she's done it — write with full confidence), what's **observed** (she's watched it in others — frame as noticing), and what needs **research** (frame as synthesis, never borrowed authority). This split is the single most important judgment call in this mode — get it wrong and the authority register breaks (book-voice.md §4).
 
 ## Research — delegate, don't dump
 
 For anything in the "needs research" bucket:
 - Spawn a subagent (`general-purpose` or a web-research-capable agent) to find and synthesize the specific claim, not to browse broadly. Ask it to return a short synthesis plus source citations — never raw search results or full page dumps into the main thread. This is the main token-cost lever in this mode: research volume happens in a subagent's disposable context, not this one.
+- Save each subagent's synthesis to `projects/<slug>/research/<topic-slug>.md` (kebab-case topic name, sources listed at the file's end) — this is the actual research library the project brief promises, not just a citation cache. Reuse an existing file instead of re-researching the same topic in a later chapter.
 - If a cited finding is widely repeated but methodologically contested, say so in the draft — that's in-voice (book-voice.md §4), not a hedge to avoid.
-- Track sources per chapter so they can be listed at chapter end (light inline attribution, full references at the end — never footnote-heavy, never "studies show").
+- Track which `research/` file backs each claim so the chapter-end reference list (light inline attribution, full references at the end — never footnote-heavy, never "studies show") can cite it accurately.
 
 ## Drafting
 
@@ -38,6 +40,10 @@ Batch these into one short round of questions at the end of a drafting pass rath
 ## Before delivering
 
 Compare the draft against book-voice.md §9.3. Check against the forbidden list and failure modes in the cheatsheet. Flag anything that reads like it could sit unchanged on a vendor slide.
+
+## Calibration capture
+
+If the author corrects the delivered draft, check whether the correction is a one-off fix or reveals a new voice pattern (a phrasing she consistently prefers, a register she consistently rejects). If it looks like a pattern, ask whether to fold it into `book-voice.md` §3/§8 — that file's own growth rule (§10) asks for exactly this. Only edit the voice file if she agrees.
 
 ## Output
 

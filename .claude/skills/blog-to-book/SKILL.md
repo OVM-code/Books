@@ -15,7 +15,7 @@ Read `voice/CHEATSHEET.md`. Read the source post(s) from `projects/<slug>/blog-p
 
 If not already set in `project.md`, ask which of the three modes this is becoming (practical guide / reflective essay / story + insight) — the expansion path differs by mode:
 
-- **→ practical guide:** the post's observation becomes the earned principle the chapter opens with; expand with research (delegate lookups to a subagent, bring back synthesis only) and route technical material through people, per `practical-guide` skill.
+- **→ practical guide:** the post's observation becomes the earned principle the chapter opens with; expand with research (delegate lookups to a subagent, save synthesis to `projects/<slug>/research/<topic-slug>.md`) and route technical material through people, per `practical-guide` skill.
 - **→ reflective essay:** treat the post itself as raw material, equivalent to a book-voice.md §9.0 sample, and shape it with the movement pattern (personal → principle → others → forward), per `reflective-essay` skill. Ask the author for anything the post compressed away that she now remembers wanting to say.
 - **→ story + insight:** the post likely only has room for the reframe, not the full scene. Run the guided elicitation from the `story-insight` skill to recover the fuller sequence before writing.
 

@@ -15,7 +15,7 @@ Scaffold `projects/<slug>/` from `projects/_template/` and fill in its brief. Th
    - Primary mode: practical guide / reflective essay / story + insight / mixed
    - Audience: young professionals & students (18-28) / professional readers (AI, ERP, consulting)
    - One or two sentences on the working premise
-2. Derive a kebab-case `<slug>` from the title, confirm it, then:
+2. Derive a kebab-case `<slug>` from the title and confirm it. Check whether `projects/<slug>/` already exists first — `cp -r` merges into an existing folder rather than failing, which can silently overwrite an in-progress `project.md`. If it exists, tell the user and ask whether they meant an existing project (point them at it instead) or want a different slug.
    ```
    cp -r projects/_template projects/<slug>
    ```

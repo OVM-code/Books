@@ -18,9 +18,11 @@ One of: `young professionals / students (18-28)` / `professional readers (AI, ER
 
 ## Chapter / post log
 
-| # | Title | Mode | Status | Blog post derived? |
-|---|---|---|---|---|
-| | | | | |
+| # | Title | Mode | Status | Blog post derived? | Promoted? |
+|---|---|---|---|---|---|
+| | | | | | |
+
+*Promoted? — date + channel(s) once `/promote` has run on the piece, e.g. `2026-07-10, LinkedIn+Substack`.*
 
 ## Research notes
 
